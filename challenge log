@@ -1,0 +1,8 @@
+height: 15% does not display navbar; height: 40px does.
+
+width: 100% leaves spaces on the sides
+* {box-sizing: border-box}, but there are still white gaps
+--Got rid or margins and padding on everything
+
+Navbar with no margin or padding is displayed below the top of the page
+  if the next section (header) has a margin
