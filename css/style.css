@@ -1,4 +1,3 @@
-/* All style should go in this document. */
 /*Look at box-shadow element for shadows*/
 
 body, body * {
@@ -6,44 +5,81 @@ body, body * {
     padding: 0;
     box-sizing: border-box;
     display: block;
-    font-family: Verdana;
+    font-family: Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, sans-serif;
 }
 
 .contentBox {
-    padding-top: ;
+    border-top: 6px solid #5E0231;
     width: 100%;
 }
 
 .contentInner {
-    padding: 35px;
-    padding-bottom: 35px;
+    padding: 100px;
+}
+
+#navBox {
+    border-top: none;
 }
 
 #navbar {
-    height: 40px;
+    border-top: none;
+    height: 60px;
     width: 100%;
-    background-color: #380038;
+    background-color: #5E0231;
     position: fixed;
     text-align: center;
+    z-index: 10000;
 }
 
 #home {
-    padding-top: 40px;
-    background-color: #DCD234;
+    padding-top: 54px;
+    background-color: #C8C8C8;
     text-align: center;
 }
 
+#home h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+#home p {
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
 #about {
-    background-color: #30B333;
+    background-color: #B0B0B0;
     text-align: left;
 }
 
 #resume {
-    background-color: #313AEE;
+    background-color: #C8C8C8;
     text-align: left;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 9px 3px rgba(0,0,0,0.4);
 }
 
 #contact {
-    background-color: #00450B;
+    background-color: #B0B0B0;
     text-align: center;
+}
+
+/*Consider goldenrod: #DAA520*/
+
+/*Text opacity*/
+
+.contentInner h1 {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.contentInner h2, .contentInner h3, .contentInner h4 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.contentInner p, .contentInner li {
+    color: rgba(0, 0, 0, 0.75);
 }
