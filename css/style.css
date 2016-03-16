@@ -1,6 +1,6 @@
 /*Look at box-shadow element for shadows*/
 
-body, body * {
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contentBox {
-    border-top: 6px solid #5E0231;
+    border-top: 6px solid #5E0289;
     width: 100%;
 }
 
@@ -83,3 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 .contentInner p, .contentInner li {
     color: rgba(0, 0, 0, 0.75);
 }
+
+ul, li{
+    list-style-type: square;
+}
+
