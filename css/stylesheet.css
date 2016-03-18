@@ -1,0 +1,170 @@
+/*  adam-personal-website/css/style.css
+ *  Stylesheet for personal website
+ */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    font-family: "Arial Black", sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-inner {
+    align-self: center;
+    padding: 100px;
+}
+
+#about > .section-inner {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, sans-serif;
+}
+
+
+#navbar {
+    border-top: none;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 10000;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
+}
+
+#navbox {
+    border-top: none;
+}
+
+
+/*****************************************************************************/
+/* Spacing */
+#home {
+    padding-top: 54px;
+    text-align: center;
+}
+
+#home .section-inner {
+    align-self: center;
+    width: 65vw;
+    min-width: 500px;
+}
+
+
+.job-list > li {
+    margin-top: 15px;
+}
+
+.skill-list > li {
+    text-align: center;
+    display: inline-block;
+    width: 5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+
+#about {
+    text-align: left;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact > .section-inner {
+    margin: 15px;
+    padding: 15px;
+}
+
+.contact-list > li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*****************************************************************************/
+/* Background Color and Shadows */
+
+/* Main body background*/
+body {
+    background-color: #254E84;
+}
+
+/* Navbar and border highlights */
+#navbar {
+    background-color: #380C2D;
+}
+section {
+    border-top: 8px solid #380C2D;
+}
+
+/* Home and resume; non-full-width sections */
+#home, #resume {
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+#resume {
+    text-align: left;
+    box-shadow: inset 0px 3px 3px rgba(0,0,0,0.4);
+}
+
+#home > .section-inner {
+    color: #000000;
+    border-left: 5px solid #380C2D;
+    border-right: 5px solid #380C2D;
+    background-color: #B75C21;
+}
+
+#resume > .section-inner {
+    background-color: #C8C8C8;
+    width: 55vw;
+    min-width: 500px;
+    box-shadow: inset 0px 3px 3px rgba(0,0,0,0.2),
+        3px 0px 3px rgba(0,0,0,0.2);
+}
+
+#home h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+#home p {
+    font-size: 1.25em;
+}
+
+
+/* About, Skills, Contact; full-width sections */
+#about {
+    background-color: #B0B0B0;
+}
+
+#skills, #contact {
+    background-color: #775D3F;
+}
+
+.skill-list > li {
+    background-color: #B75C21;
+    border: 2px solid #000000;
+}
+
+
+#contact a:link, #contact a:visited, #contact a:hover {
+    color: #380C2D;
+}
+
+#contact a:active {
+    color: #B75C21;
+}
+
+/*Consider goldenrod: #DAA520*/
