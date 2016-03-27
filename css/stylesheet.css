@@ -2,12 +2,45 @@
  *  Stylesheet for personal website
  */
 
+/*****************************************************************************/
+/* Text */
+body {
+    font-family: "Arial Black", sans-serif;
+    font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: Verdana, sans-serif;*/
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accent-letter {
+    font-size: 3.5em;
+    display: inline;
+}
+
+header p {
+    font-size: 1.25em;
+}
+
+hr {
+  align: center;
+  width: 65%;
+}
+
+/*****************************************************************************/
+/* Spacing */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display: block;
-    font-family: "Arial Black", sans-serif;
 }
 
 section {
@@ -19,46 +52,11 @@ section {
 .section-inner {
     align-self: center;
     padding: 100px;
-}
-
-#about > .section-inner {
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Verdana, sans-serif;
-}
-
-
-#navbar {
-    border-top: none;
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    text-align: center;
-    z-index: 10000;
-    box-shadow: 0px 3px 3px rgba(0,0,0,0.4);
-}
-
-#navbox {
-    border-top: none;
-}
-
-
-/*****************************************************************************/
-/* Spacing */
-#home {
-    padding-top: 54px;
     text-align: center;
 }
 
-#home .section-inner {
-    align-self: center;
-    width: 65vw;
-    min-width: 500px;
+header .section-inner {
+    padding-top: 80px;
 }
 
 
@@ -75,7 +73,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#about {
+#about > .section-inner {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#skills h3 {
+    padding-bottom: 20px;
+}
+
+#resume .section-inner {
     text-align: left;
 }
 
@@ -88,10 +97,23 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
 }
 
+.contact-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .contact-list > li {
     display: inline-block;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
 }
 
 /*****************************************************************************/
@@ -99,72 +121,42 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main body background*/
 body {
-    background-color: #254E84;
+    background-color: #FAFAFA;
 }
 
-/* Navbar and border highlights */
-#navbar {
-    background-color: #380C2D;
-}
-section {
-    border-top: 8px solid #380C2D;
-}
-
-/* Home and resume; non-full-width sections */
-#home, #resume {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+header > .section-inner {
+    color: #E1E1E1;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #000000;
 }
 
-#resume {
-    text-align: left;
-    box-shadow: inset 0px 3px 3px rgba(0,0,0,0.4);
+.accent-letter {
+    color: #E81414;
 }
 
-#home > .section-inner {
-    color: #000000;
-    border-left: 5px solid #380C2D;
-    border-right: 5px solid #380C2D;
-    background-color: #B75C21;
-}
 
 #resume > .section-inner {
-    background-color: #C8C8C8;
     width: 55vw;
     min-width: 500px;
-    box-shadow: inset 0px 3px 3px rgba(0,0,0,0.2),
-        3px 0px 3px rgba(0,0,0,0.2);
-}
-
-#home h1 {
-    font-size: 2.5em;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
-}
-#home p {
-    font-size: 1.25em;
 }
 
 
 /* About, Skills, Contact; full-width sections */
-#about {
-    background-color: #B0B0B0;
-}
-
-#skills, #contact {
-    background-color: #775D3F;
-}
-
 .skill-list > li {
-    background-color: #B75C21;
+    background-color: #E81414;
     border: 2px solid #000000;
 }
 
 
-#contact a:link, #contact a:visited, #contact a:hover {
-    color: #380C2D;
+a:link, a:visited {
+    color: #000000;
 }
 
-#contact a:active {
-    color: #B75C21;
+a:hover {
+    color: #606060;
 }
 
-/*Consider goldenrod: #DAA520*/
+a:active {
+    color: #E81414;
+}
