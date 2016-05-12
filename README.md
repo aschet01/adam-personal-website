@@ -1,2 +1,2 @@
-# adam-personal-website
-An initial test repo for A100 Apprentices to use to practice on.
+# Adam-Personal-Website
+Personal Website. Created in basic HTML and CSS as first A100 Apprenticeship project.
